@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Node
+WebRacing/node_modules/
+WebRacing/dist/
+
+# Unity
+[Aa]nti[Gg]ravity[Rr]acing/[Ll]ibrary/
+[Aa]nti[Gg]ravity[Rr]acing/[Tt]emp/
+[Aa]nti[Gg]ravity[Rr]acing/[Oo]bj/
+[Aa]nti[Gg]ravity[Rr]acing/[Bb]uild/
+[Aa]nti[Gg]ravity[Rr]acing/[Bb]uilds/
+[Aa]nti[Gg]ravity[Rr]acing/[Ll]ogs/
+[Aa]nti[Gg]ravity[Rr]acing/[Mm]emoryCaptures/
+
+# OS files
+.DS_Store

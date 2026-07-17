@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anti-Gravity WebRacing</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 3D Canvas Container -->
+    <div id="game-container"></div>
+
+    <!-- UI Overlay: Vehicle Selection Screen -->
+    <div id="ui-layer">
+      <div class="header">
+        <h1>ANTI-GRAVITY LEAGUE</h1>
+        <p>Select Your Vessel</p>
+      </div>
+
+      <div class="vehicle-info">
+        <h2 id="vehicle-name">Ship Name</h2>
+        <p id="vehicle-desc">Ship Description</p>
+        
+        <div class="stats-container">
+          <div class="stat-row">
+            <span>Top Speed</span>
+            <div class="stat-bar-bg"><div id="stat-speed" class="stat-bar-fill"></div></div>
+          </div>
+          <div class="stat-row">
+            <span>Acceleration</span>
+            <div class="stat-bar-bg"><div id="stat-accel" class="stat-bar-fill"></div></div>
+          </div>
+          <div class="stat-row">
+            <span>Handling</span>
+            <div class="stat-bar-bg"><div id="stat-handling" class="stat-bar-fill"></div></div>
+          </div>
+          <div class="stat-row">
+            <span>Hover Height</span>
+            <div class="stat-bar-bg"><div id="stat-hover" class="stat-bar-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="btn-prev" class="btn secondary">◄ PREV</button>
+        <button id="btn-start" class="btn primary">LAUNCH</button>
+        <button id="btn-next" class="btn secondary">NEXT ►</button>
+      </div>
+    </div>
+
+    <!-- Gameplay Overlay: HUD -->
+    <div id="hud-layer" class="hidden">
+      <div class="hud-top-left">
+        <h2>SPEED: <span id="hud-speed">0</span> KM/H</h2>
+      </div>
+      <div class="hud-bottom">
+        <p>Controls: WASD/Arrows to Move, SPACE to Drift</p>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
